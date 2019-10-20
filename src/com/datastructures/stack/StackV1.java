@@ -1,8 +1,9 @@
 package com.datastructures.stack;
 
+
 import java.util.EmptyStackException;
 
-public class StackV1 {
+public class StackV1<T> {
     private static class StackNode<T>{
         private T data;
         private StackNode<T> next;
@@ -11,26 +12,25 @@ public class StackV1 {
             this.data = data;
         }
     }
-
     private StackNode<T> top;
 
-    public Т pop(){
+    public T pop(){
         if(top == null)throw new EmptyStackException();
-        Т item = top.data ;
+        T item = top.data ;
          top = top.next;
         return item;
        }
-    public void push(T item) {
-        StackNode <T> t = new StackNode<T> ( item ) ;
+    public void push(T item){
+        StackNode<T> t = new StackNode(item) ;
         t.next = top;
         top = t;
         }
 
-    public Т peek ( ) {
+    public T peek(){
         if (top == null) throw new EmptyStackException ( ) ;
         return top.data;
         }
-    public boolean isEmpty ( ) {
+    public boolean isEmpty(){
     return top == null;
     }
 
