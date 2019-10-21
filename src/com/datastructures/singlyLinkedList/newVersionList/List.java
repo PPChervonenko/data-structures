@@ -20,7 +20,7 @@ public class List<E>{
         node.setData(data);
         if(tail==null){
             head=node;
-            head=node;
+            tail=node;
 
         }else{
             tail.setNext(node);

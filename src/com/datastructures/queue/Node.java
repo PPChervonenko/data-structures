@@ -1,6 +1,6 @@
-package com.datastructures.doublyLinkedList.newVersionList;
+package com.datastructures.queue;
 
-public class Node <E> {
+public class Node<E> {
     private Node next;
     private Node prev;
     private  E data;
