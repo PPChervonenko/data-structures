@@ -3,7 +3,7 @@ package com.datastructures.stack;
 
 import java.util.EmptyStackException;
 
-public class StackV1<T> {
+public class Stack<T> {
     private static class StackNode<T>{
         private T data;
         private StackNode<T> next;

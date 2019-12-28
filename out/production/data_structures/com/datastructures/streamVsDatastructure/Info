@@ -1,0 +1,7 @@
+java.util.stream.Stream.
+  - Stream.empty() // Stream<String>
+  - list.stream() // Stream<String>
+  - map.entrySet().stream() // Stream<Map.Entry<String, String>>
+  - Arrays.stream(array) // Stream<String>
+  - Stream.of("a", "b", "c") // Stream<String>
+

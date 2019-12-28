@@ -24,6 +24,7 @@ public class Main {
         ));
 
         for(TreeNode node : root.getChildren()) {
+
             System.out.println(node.getData());
         }
     }
