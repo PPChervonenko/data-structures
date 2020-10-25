@@ -65,6 +65,14 @@ public class MapEditSaveEnumList {
         );
         Map<String, List<Programer>> erum2 = programerStream.collect(Collectors.groupingBy(Programer::getName));
         erum2.entrySet().forEach(System.out::println);
+
+        System.out.println("---------------------------------------");
+        EnumMap<Level,List<Programer>> erumMap2 = new EnumMap<>(Level.class);
+        erumMap2.put(Level.Senior,Arrays.asList(new Programer("Robert",45)));
+        erumMap2.put(Level.Middle,Arrays.asList(new Programer("Valera",34)));
+        erumMap2.put(Level.Junior,Arrays.asList(new Programer("Leon",43)));
+
+        erumMap2.entrySet().stream().forEach(System.out::println);
     }
 
 
